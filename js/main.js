@@ -10,22 +10,22 @@
         }, 1);
     };
     spinner();
-    function filterJobs(keyword) {
+    document.getElementById('searchBtn').addEventListener('click', function() {
+        var keyword = document.getElementById('keywordInput').value.trim().toLowerCase();
+        var location = document.getElementById('locationSelect').value.trim().toLowerCase();
+    
         var jobProfiles = document.querySelectorAll('.job-profile');
-
+    
         jobProfiles.forEach(function(profile) {
-            
-            if (profile.innerText.toLowerCase().includes(keyword.toLowerCase())) {
-                
+            var profileKeyword = profile.getAttribute('data-keyword').toLowerCase();
+            var profileLocation = profile.getAttribute('data-location').toLowerCase();
+            console.log(profileKeyword.includes(keyword),keyword, profileLocation, location);
+            if ((keyword === '' && profileLocation === location) ||  (profileKeyword.includes(keyword) &&  location === '') || (profileKeyword.includes(keyword) &&  profileLocation === location)) {
                 profile.style.display = 'block';
             } else {
                 profile.style.display = 'none';
             }
         });
-    }
-    document.getElementById('searchBtn').addEventListener('click', function() {
-        var keyword = document.getElementById('keywordInput').value;
-        filterJobs(keyword);
     });
     
     // Initiate the wowjs
