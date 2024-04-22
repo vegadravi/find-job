@@ -69,10 +69,9 @@
         </div>
         <!-- Carousel End -->
 
-
         <!-- Search Start -->
         <div class="parent-container bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
-            <div class=sub-parents-container>
+            <div class="sub-parents-container">
                 <div class="row g-2">
                     <div class="col-md-10">
                         <div class="row g-2">
@@ -81,10 +80,11 @@
                             </div>
                             <div class="col-md-4">
                                 <select id="locationSelect" class="form-select border-0">
-                                    <option selected>Location</option>
-                                    <option value="1">Surat</option>
-                                    <option value="2">Ahemdabad</option>
-                                    <option value="3">Baroda</option>
+                                    <option value="">Location</option>
+                                    <option value="Surat">Surat</option>
+                                    <option value="Ahmedabad">Ahmedabad</option>
+                                    <option value="Baroda">Baroda</option>
+                                    <option value="Amreli,India">Amreli,India</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
@@ -96,10 +96,9 @@
             </div>
         </div>
         
+        
         <!-- Search End -->
-
-        <!-- Jobs Start -->
-        <div class="container-xxl py-5" id="jobResults" class=sub-parents-container>
+         <div class="container-xxl py-5" id="jobResults" class=sub-parents-container>
             <div class=sub-parents-container>
                 <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Job Listing</h1>
                 <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
@@ -107,7 +106,7 @@
                     </ul>
                     <div class="tab-content">
                         <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="job-item p-4 mb-4 job-profile" >
+                            <div class="job-item p-4 mb-4 job-profile" data-keyword="angular-developer" data-location="Surat">
                                 <div class="row g-4">
                                     <div class="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img class="flex-shrink-0 image-fulId border rounded" src="img/com-logo-1.jpg" alt="" style="width: 80px; height: 80px;">
@@ -127,13 +126,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="job-item p-4 mb-4 job-profile">
+                            <div class="job-item p-4 mb-4 job-profile"  data-keyword="reactive-developer" data-location="Baroda">
                                 <div class="row g-4">
                                     <div class="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img class="flex-shrink-0 image-fulId border rounded" src="img/com-logo-2.jpg" alt="" style="width: 80px; height: 80px;">
                                         <div class="text-start ps-4">
                                             <h5 class="mb-3">Reactive Developer</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Surat, India</span>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Baroda</span>
                                             <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
                                             <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
                                         </div>
@@ -147,7 +146,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="job-item p-4 mb-4 job-profile">
+                            <div class="job-item p-4 mb-4 job-profile"  data-keyword="web-designer" data-location="Surat">
                                 <div class="row g-4">
                                     <div class="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img class="flex-shrink-0 image-fulId border rounded" src="img/com-logo-3.jpg" alt="" style="width: 80px; height: 80px;">
@@ -167,7 +166,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="job-item p-4 mb-4 job-profile">
+                            <div class="job-item p-4 mb-4 job-profile"  data-keyword="wordpress developer" data-location="Surat">
                                 <div class="row g-4">
                                     <div class="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img class="flex-shrink-0 image-fulId border rounded" src="img/com-logo-4.jpg" alt="" style="width: 80px; height: 80px;">
@@ -187,13 +186,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="job-item p-4 mb-4 job-profile">
+                            <div class="job-item p-4 mb-4 job-profile"  data-keyword="wordpress developer" data-location="Ahmedabad">
                                 <div class="row g-4">
                                     <div class="col-sm-12 col-md-8 d-flex align-items-center">
                                         <img class="flex-shrink-0 image-fulId border rounded" src="img/com-logo-5.jpg" alt="" style="width: 80px; height: 80px;">
                                         <div class="text-start ps-4">
                                             <h5 class="mb-3">Wordpress Developer</h5>
-                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Amreli,India</span>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Ahmedabad,India</span>
                                             <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
                                             <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
                                         </div>
@@ -213,7 +212,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
 
         <!-- Footer Start -->
         <div class="parent-container bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
